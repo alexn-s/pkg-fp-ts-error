@@ -1,7 +1,6 @@
 import * as E from 'fp-ts/Either';
 
 (() => {
-	console.log('🌠 start\n\n');
-
-	console.log('\n\n🚩 end');
+	console.log('start\n\n');
+	console.log('\n\nend');
 })();
