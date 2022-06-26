@@ -2,14 +2,14 @@
 	"name": "fp-ts-pkg-error",
 	"version": "0.0.0",
 	"description": "",
+	"bin": "dist/main.js",
 	"scripts": {
-		"default": "npm run clean && npm run build && npm run pkg-var-2 && cd .exes && main.exe",
+		"start": "node dist/main.js",
+		"default": "npm run clean && npm run build && npm run pkg-app && cd .exes && main.exe",
 		"clean": "rimraf .exes && rimraf dist",
 		"build": "tsc",
-		"pkg-var-1": "pkg dist/main.js --targets node16-win --out-path ./.exes --debug --no-bytecode --public-packages '*' --public",
-		"pkg-var-2": "pkg dist/main.js --targets node16-win --out-path ./.exes --debug"
+		"pkg-app": "pkg . --targets node16-win-x64"
 	},
-
 	"main": "dist/main.js",
 	"types": "dist/main.d.ts",
 	"publishConfig": {
